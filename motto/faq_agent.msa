@@ -1,0 +1,5 @@
+(= (response)
+   (let ($answer (find-faq (messages)))
+      (if (== $answer (empty))
+          "I don't know"  ; Fallback
+          $answer))
